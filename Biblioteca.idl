@@ -10,11 +10,14 @@ module Biblioteca {
         boolean estaDisponible;
     };
 
+    typedef sequence<Libro> ListaLibros;
+
     // Define la interfaz para el sistema de gestión de la biblioteca
     interface GestionBiblioteca {
-        // Busca un libro por título y devuelve los detalles del libro
-        void buscarLibros(out string[] libros);
+        // Lista completa de libros
+        void buscarLibros(out ListaLibros libros);
 
+        // Busca un libro por título y devuelve los detalles del libro
         Libro buscarLibro(in string titulo);
 
         // Presta un libro, cambiando su estado a no disponible

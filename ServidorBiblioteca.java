@@ -16,6 +16,7 @@ class GestionBibliotecaImpl extends GestionBibliotecaPOA {
         this.orb = orb;
         // Inicializar algunos libros en el sistema
         libros.put("1234", new Libro("El principito", "Antoine de Saint-Exupéry", "1234", true));
+        libros.put("5678", new Libro("Cien años de soledad", "Gabriel García Márquez", "5678", true));
         // Agregar más libros según sea necesario
     }
 
@@ -24,6 +25,16 @@ class GestionBibliotecaImpl extends GestionBibliotecaPOA {
     }
 
     // Implementar los métodos de la interfaz GestionBiblioteca
+    @Override
+    public void buscarLibros(ListaLibrosHolder librosAlmacen) {
+        System.out.println("Buscando libros...");
+        librosAlmacen.value = new Libro[libros.size()];
+        int i = 0;
+        for (Libro libro : libros.values()) {
+            librosAlmacen.value[i++] = libro;
+        }
+    }
+
     @Override
     public Libro buscarLibro(String titulo) {
         return libros.values().stream()

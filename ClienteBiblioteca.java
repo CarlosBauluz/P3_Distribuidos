@@ -23,6 +23,14 @@ public class ClienteBiblioteca {
             Libro libro = gestionBiblioteca.buscarLibro(tituloLibro);
             System.out.println("Libro encontrado: " + libro.titulo + ", " + libro.autor + ", ISBN: " + libro.ISBN);
 
+            // Ejemplo: Buscar todos los libros
+            ListaLibrosHolder librosAlmacen = new ListaLibrosHolder();
+            gestionBiblioteca.buscarLibros(librosAlmacen);
+            System.out.println("Lista de libros:");
+            for (Libro libroItem : librosAlmacen.value) {
+                System.out.println(" - " + libroItem.titulo + ", " + libroItem.autor + ", ISBN: " + libroItem.ISBN);
+            }
+
             // Ejemplo: Prestar un libro
             boolean resultadoPrestamo = gestionBiblioteca.prestarLibro(libro.ISBN);
             if (resultadoPrestamo) {

@@ -34,6 +34,7 @@ class GestionBibliotecaImpl extends GestionBibliotecaPOA {
 
     @Override
     public boolean prestarLibro(String ISBN) {
+        System.out.println("Intentando prestar el libro con ISBN: " + ISBN);
         if (libros.containsKey(ISBN) && libros.get(ISBN).estaDisponible) {
             libros.get(ISBN).estaDisponible = false;
             return true;

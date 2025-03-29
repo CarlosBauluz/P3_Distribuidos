@@ -7,6 +7,10 @@
 ## 📦 Versiones
 - **Java**: openjdk version "1.8.0_442"
 
+## 📄 Documento de la Práctica
+
+Puedes consultar el documento completo de la práctica en formato PDF [aquí](https://github.com/tu-usuario/tu-repo/blob/main/Practica3.pdf).
+
 ## 🚀 Ejecutar la Práctica
 
 Sigue los siguientes pasos para ejecutar la práctica:

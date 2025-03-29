@@ -9,7 +9,7 @@
 
 ## 📄 Documento de la Práctica
 
-Puedes consultar el documento completo de la práctica en formato PDF [aquí](https://github.com/CarlosBauluz/P3_Distribuidos/blob/main/Practica3.pdf).
+Puedes consultar el documento completo de la práctica en formato PDF [aquí](./Practica3.pdf).
 
 ## 🚀 Ejecutar la Práctica
 

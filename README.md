@@ -50,6 +50,6 @@ Finalmente, en la tercera terminal, inicia el cliente desde donde se harán toda
 java ClienteBiblioteca -ORBInitialHost localhost -ORBInitialPort 1050
 ```
 
-#### Diagrama de Flujo de la Función añadida
+## 🔄 Diagrama de Flujo de la Función añadida
 
 ![image](https://github.com/user-attachments/assets/f6a31d84-5331-4387-958e-3dea9c543fcc)
